@@ -30,7 +30,7 @@ const Layout = ({ children, pageInfo }) => (
           <Navbar pageInfo={pageInfo} />
           <Row noGutters>
             <Col>
-              <Container className="mt-5">
+              <Container fluid className="px-0">
                 <main>{children}</main>
               </Container>
             </Col>
@@ -38,7 +38,7 @@ const Layout = ({ children, pageInfo }) => (
         </Container>
         <Container fluid className="px-0">
           <Row noGutters>
-            <Col className="footer-col">
+            <Col className="footer-col mt-5">
               <footer>
                 <span>
                   © {new Date().getFullYear()}, Built with

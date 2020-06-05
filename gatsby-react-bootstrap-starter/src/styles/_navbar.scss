@@ -1,7 +1,13 @@
 #site-navbar {
-  background-color: $color-primary;
+  background-color: $color-secondary;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: all 0.5s linear;
+}
+
+/* box shadow on scroll */
+.navbar.active {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }

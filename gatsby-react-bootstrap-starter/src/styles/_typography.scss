@@ -1,0 +1,34 @@
+$color-body: #777777;
+$color-heading: #222222;
+$color-nav: #222;
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+  color: $color-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-heading;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-nav !important;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-link {
+    padding: 0 8px 0px 8px;
+    margin-left: 10px;
+  }
+}

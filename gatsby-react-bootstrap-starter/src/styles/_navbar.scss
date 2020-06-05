@@ -1,5 +1,5 @@
 #site-navbar {
-  background-color: $color-secondary;
+  background-color: $white;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -7,7 +7,17 @@
   transition: all 0.5s linear;
 }
 
+@include media-breakpoint-up(lg) {
+  #site-navbar {
+    padding: 20px 0px;
+  }
+}
+
 /* box shadow on scroll */
 .navbar.active {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link.active {
+  color: $color-primary !important;
 }

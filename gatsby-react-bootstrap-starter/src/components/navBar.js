@@ -28,12 +28,19 @@ const CustomNavbar = ({ pageInfo }) => {
                 </Nav.Link>
               </Link>
               <Nav.Link href="#services">Services</Nav.Link>
+              <Nav.Link href="#services">Portfolio</Nav.Link>
+              <Nav.Link href="#services">Pricing</Nav.Link>
               <NavDropdown title="Blog" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#blog-home">Blog Home</NavDropdown.Item>
                 <NavDropdown.Item href="#blog-single">
                   Blog Single
                 </NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown title="Pages" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#blog-home">Elements</NavDropdown.Item>
+                <NavDropdown.Item href="#blog-single">Level 2</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#services">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -51,5 +58,13 @@ $(window).scroll(function() {
     $(".navbar").removeClass("active")
   }
 })
+
+function openNav() {
+  document.getElementById("site-navbar").style.width = "80%"
+}
+
+function closeNav() {
+  document.getElementById("site-navbar").style.width = "0%"
+}
 
 export default CustomNavbar

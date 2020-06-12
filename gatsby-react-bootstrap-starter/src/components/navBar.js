@@ -1,9 +1,9 @@
-import React, { Component } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import $ from "jquery"
 import Navmenu from "./navmenu"
 
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
 
 const CustomNavbar = ({ pageInfo }) => {
   console.log(pageInfo)

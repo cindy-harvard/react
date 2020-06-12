@@ -1,7 +1,7 @@
-import React, { Component } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
+import { Nav, Container, NavDropdown } from "react-bootstrap"
 
 export default () => (
   <Container>
